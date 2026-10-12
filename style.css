@@ -1,0 +1,81 @@
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a18;
+  --muted: #5f5a54;
+  --rule: #d8d2c6;
+  --accent: #ba480f;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #110f0e;
+    --fg: #ece7de;
+    --muted: #a59e94;
+    --rule: #36312c;
+    --accent: #f0875a;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font:
+    16px/1.6 system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin: 0 0 4px;
+}
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+h3 {
+  font-size: 1rem;
+  margin: 1.25rem 0 0.25rem;
+}
+p,
+ul {
+  margin: 0.5rem 0;
+}
+a {
+  color: var(--accent);
+}
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+}
+td,
+th {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+.wide {
+  overflow-x: auto;
+}
