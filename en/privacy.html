@@ -13,7 +13,7 @@
         ><a href="delete-account.html">Delete your account</a>
       </nav>
       <h1>Privacy policy</h1>
-      <p class="meta">Trackbook app and this website · Version of 12 October 2026</p>
+      <p class="meta">Trackbook app and this website · Version of 13 October 2026</p>
 
       <p>
         Trackbook is a training log. It works without an account, and then your notebook never
@@ -36,7 +36,9 @@
         Workouts, sets, routines, exercises, equipment, gyms, body weight, your name, unit and
         weekly goal are stored only on your device, in the app's own storage. We cannot see them.
         They stay there until you clear the notebook in Settings or delete the app. You can export
-        them any time as CSV or as a backup file (Settings › Your data).
+        them any time as CSV or as a backup file (Settings › Your data). If your phone's own backup
+        (iCloud or Google) is switched on, the system includes the app's storage in it, under
+        Apple's or Google's terms.
       </p>
 
       <h2>3. Apple Health and Health Connect (optional, off by default)</h2>
@@ -59,13 +61,15 @@
       </ul>
       <p>
         This is health data (Art. 9 GDPR). It is processed only on your phone: data from Apple
-        Health or Health Connect never goes to our servers, into sync or into backup files, and is
-        neither shared nor used for advertising. <strong>Legal basis:</strong> your explicit consent
-        (Art. 9(2)(a) GDPR), given with the switch and the system's access dialog. You can withdraw
-        it at any time: switch it off (Trackbook can then remove what it wrote), or revoke access in
-        Apple Health or Health Connect. Weights read from there are deleted from the app when you
-        switch it off. What Trackbook wrote to Apple Health or Health Connect is managed there,
-        under Apple's or Google's terms.
+        Health or Health Connect never goes to our servers, into sync or into Trackbook's backup
+        files, and is neither shared nor used for advertising. Weights read from there are kept in
+        the app's storage while the switch is on, so your phone's own backup can contain them.
+        <strong>Legal basis:</strong> your explicit consent (Art. 9(2)(a) GDPR), given with the
+        switch and the system's access dialog. You can withdraw it at any time: switch it off
+        (Trackbook can then remove what it wrote), or revoke access in Apple Health or Health
+        Connect. Weights read from there are deleted from the app when you switch it off. What
+        Trackbook wrote to Apple Health or Health Connect is managed there, under Apple's or
+        Google's terms.
       </p>
 
       <h2>4. Account and sync (optional)</h2>
@@ -73,21 +77,27 @@
         <strong>What:</strong> when you sign in with Apple, we receive an account ID from Apple,
         your email address (or an anonymous Apple relay address if you choose "Hide my email") and,
         the first time, your name. With your consent, Trackbook then stores your notebook in your
-        account: workouts, sets and notes, routines, custom exercises, equipment and gyms (with
-        their location if you saved one), body-weight entries, and your name, unit and weekly goal.
+        account: workouts, sets and notes, routines, custom exercises, equipment, gyms (with their
+        location and address if you saved one), body-weight entries, workouts imported from other
+        apps (including the original rows of the imported file), and your name, unit, weekly goal
+        and time zone.
       </p>
       <p>
         <strong>Why and legal basis:</strong> the account exists so you can use your notebook on
         several phones (Art. 6(1)(b) GDPR, performance of the service you asked for). Training data
         and body weight can say something about your health, so we only upload the notebook with
         your explicit consent (Art. 9(2)(a) and Art. 6(1)(a) GDPR). The app asks for it before the
-        first upload and stores the consent version and time with your account, so we can prove it
-        (Art. 7(1) GDPR).
+        first upload. Our server records which version of the consent text you agreed to and when,
+        and also when you withdraw it, so we can prove it (Art. 7(1) GDPR). Without a current
+        consent the server accepts no uploads.
       </p>
       <p>
-        <strong>Withdrawing consent:</strong> delete your account in Settings, or ask us by email
-        (see <a href="delete-account.html">Delete your account</a>). Withdrawal does not affect
-        anything done before it.
+        <strong>Withdrawing consent:</strong> in Settings › Account, choose "Stop sync and delete
+        cloud copy". This deletes the notebook stored in your account at once and signs this phone
+        out; the notebook on your phone, your account and your subscription stay. You can also
+        delete your account in Settings, or ask us by email (see
+        <a href="delete-account.html">Delete your account</a>). Withdrawal does not affect anything
+        done before it.
       </p>
       <p>
         <strong>Recipient:</strong> Supabase, Inc. (supabase.com) operates the database for us as
@@ -126,11 +136,14 @@
 
       <h2>5. Crash reports (optional, off by default)</h2>
       <p>
-        If you switch on "Anonymous crash reports" on the first screen or in Settings, the app sends
-        a report when it crashes: the error type, where in the code it happened, the app version,
-        the operating system and the device model. Error messages, workout values, notes, imported
-        files, your name and your IP address are removed before sending; there are no screen
-        recordings, traces or breadcrumbs.
+        If you switch on "Crash reports" on the first screen or in Settings, the app sends a report
+        when it crashes: the error type, where in the code it happened, the app version, the
+        operating system and the device model. For errors in the app's own code, the error message
+        is removed before sending. A crash inside the system or native code can also include the
+        system's error message, the phone's language, time zone, free memory and storage, and a
+        random ID the crash reporter keeps for this installation. Workout values, notes, imported
+        files and your name are never included. Sentry is set not to store your IP address. There
+        are no screen recordings, traces, usage sessions or breadcrumbs.
       </p>
       <p>
         <strong>Legal basis:</strong> your consent (Art. 6(1)(a) GDPR, § 25(1) TDDDG). Switching it
@@ -166,8 +179,10 @@
         When you open the gym map or search for gyms, the app loads map tiles and gym locations from
         OpenStreetMap-based services. They receive your IP address and the map area you are looking
         at, which can reveal roughly where you are. Your exact GPS position, your notebook and your
-        account are not sent. The map is only used when you open it; location permission is asked
-        for only then, and you can use the map without it.
+        account are not sent to these services. The map is only used when you open it; location
+        permission is asked for only then, and you can use the map without it. While the map is open
+        on Wi-Fi, the app also downloads the map around your starred gyms so it works offline; the
+        tile service then sees those areas.
       </p>
       <ul>
         <li>Map tiles: OpenFreeMap (openfreemap.org)</li>
@@ -181,6 +196,18 @@
         <strong>Legal basis:</strong> providing the feature you asked for (Art. 6(1)(b) GDPR). These
         services act as independent controllers; their own privacy policies apply. Gyms found are
         cached on your phone.
+      </p>
+      <p>
+        <strong>Street addresses:</strong> gyms from the map use their OpenStreetMap address. When
+        you save a gym you placed yourself, or the app placed one for you at the start of a workout,
+        its street address is looked up once with your phone's address service, which Apple (iPhone)
+        or Google (Android) runs under its own responsibility; it receives the saved point (Art.
+        6(1)(b) GDPR).
+      </p>
+      <p>
+        <strong>At the start of a workout:</strong> if you already allowed location, the app checks
+        on your phone whether you are at one of your gyms, and saves your position for a gym that
+        has none yet. Nothing else is sent for this than the address lookup above.
       </p>
 
       <h2>8. App stores and notifications</h2>
