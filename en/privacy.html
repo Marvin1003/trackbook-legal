@@ -51,8 +51,18 @@
           <strong>Workouts:</strong> Trackbook writes every finished workout (type, start, end,
           name) there. To avoid adding a workout your watch already recorded, the app reads other
           apps' workouts at the same time. Heart rate and active calories that a watch or chest
-          strap measured during the workout are shown with it; these values are not stored.
-          Trackbook writes no calories.
+          strap measured during the workout are shown with it; these values are not stored. The
+          iPhone app writes no calories.
+        </li>
+        <li>
+          <strong>Apple Watch:</strong> if you use Trackbook on an Apple Watch, it asks for access
+          to Apple Health on the watch the first time a workout runs there. During the workout the
+          watch measures your heart rate and shows it. It saves the workout to Apple Health, with
+          the heart rate and active calories it measured, only when Workouts is switched on, and
+          otherwise discards it; the iPhone then does not add the workout a second time. The watch
+          exchanges the running workout (sets, weights, reps, rest) only with your iPhone, directly
+          over Apple's connection between the two; heart rate and calories go neither to the iPhone
+          nor anywhere else.
         </li>
         <li>
           <strong>Body weight:</strong> Trackbook writes the weight you enter from then on, and
@@ -60,13 +70,14 @@
         </li>
       </ul>
       <p>
-        This is health data (Art. 9 GDPR). It is processed only on your phone: data from Apple
-        Health or Health Connect never goes to our servers, into sync or into Trackbook's backup
-        files, and is neither shared nor used for advertising. Weights read from there, the record
-        of what Trackbook wrote there and the Health switches are kept in a separate part of the
-        app's storage that your phone's own backups (iCloud, Google or a computer) leave out, as
-        does the transfer to a new Android phone, so on a phone set up from such a backup, Health is
-        off until you switch it on there. Backups made before October 2026 can still contain them.
+        This is health data (Art. 9 GDPR). It is processed only on your phone (and your Apple Watch,
+        if you use Trackbook there): data from Apple Health or Health Connect never goes to our
+        servers, into sync or into Trackbook's backup files, and is neither shared nor used for
+        advertising. Weights read from there, the record of what Trackbook wrote there and the
+        Health switches are kept in a separate part of the app's storage that your phone's own
+        backups (iCloud, Google or a computer) leave out, as does the transfer to a new Android
+        phone, so on a phone set up from such a backup, Health is off until you switch it on there.
+        Backups made before October 2026 can still contain them.
         <strong>Legal basis:</strong> your explicit consent (Art. 9(2)(a) GDPR), given with the
         switch and the system's access dialog. You can withdraw it at any time: switch it off
         (Trackbook can then remove what it wrote), or revoke access in Apple Health or Health
