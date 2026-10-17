@@ -10,15 +10,16 @@
     <main>
       <nav>
         <a href="../de/privacy.html">Deutsch</a><a href="imprint.html">Legal notice</a
-        ><a href="delete-account.html">Delete your account</a>
+        ><a href="delete-account.html">Delete your data</a>
       </nav>
       <h1>Privacy policy</h1>
-      <p class="meta">Trackbook app and this website · Version of 13 October 2026</p>
+      <p class="meta">Trackbook app and this website · Version of 17 October 2026</p>
 
       <p>
-        Trackbook is a training log. It works without an account, and then your notebook never
-        leaves your phone. This policy explains which data leaves the phone, when, why, and who
-        receives it. The German version is the binding one.
+        Trackbook is a training log. There is no account, and Trackbook runs no server for your
+        notebook. It stays on your phone unless you switch on iCloud sync on an iPhone or iPad
+        (section 4). This policy explains which data leaves the phone, when, why, and who receives
+        it. The German version is the binding one.
       </p>
 
       <h2>1. Who is responsible</h2>
@@ -34,11 +35,12 @@
       <h2>2. Your notebook on the phone</h2>
       <p>
         Workouts, sets, routines, exercises, equipment, gyms, body weight, your name, unit and
-        weekly goal are stored only on your device, in the app's own storage. We cannot see them.
-        They stay there until you clear the notebook in Settings or delete the app. You can export
-        them any time as CSV or as a backup file (Settings › Your data). If your phone's own backup
-        (iCloud or Google) is switched on, the system includes the notebook in it, under Apple's or
-        Google's terms. Data from Apple Health or Health Connect is kept out of it (section 3).
+        weekly goal are stored on your device, in the app's own storage, and also in your iCloud
+        only if you switch on iCloud sync (section 4). We cannot see them. On the device they stay
+        until you clear the notebook in Settings or delete the app. You can export them any time as
+        CSV or as a backup file (Settings › Your data). If your phone's own backup (iCloud or
+        Google) is switched on, the system includes the notebook in it, under Apple's or Google's
+        terms. Data from Apple Health or Health Connect is kept out of it (section 3).
       </p>
 
       <h2>3. Apple Health and Health Connect (optional, off by default)</h2>
@@ -71,8 +73,8 @@
       </ul>
       <p>
         This is health data (Art. 9 GDPR). It is processed only on your phone (and your Apple Watch,
-        if you use Trackbook there): data from Apple Health or Health Connect never goes to our
-        servers, into sync or into Trackbook's backup files, and is neither shared nor used for
+        if you use Trackbook there): data from Apple Health or Health Connect never goes into
+        iCloud sync or into Trackbook's backup files, and is neither shared nor used for
         advertising. Weights read from there, the record of what Trackbook wrote there and the
         Health switches are kept in a separate part of the app's storage that your phone's own
         backups (iCloud, Google or a computer) leave out, as does the transfer to a new Android
@@ -86,67 +88,47 @@
         Google's terms.
       </p>
 
-      <h2>4. Account and sync (optional)</h2>
+      <h2>4. iCloud sync (optional, iPhone and iPad only, off by default)</h2>
       <p>
-        <strong>What:</strong> when you sign in with Apple, we receive an account ID from Apple,
-        your email address (or an anonymous Apple relay address if you choose "Hide my email") and,
-        the first time, your name. With your consent, Trackbook then stores your notebook in your
-        account: workouts, sets and notes, routines, custom exercises, equipment, gyms (with their
-        location and address if you saved one), body-weight entries, workouts imported from other
-        apps (including the original rows of the imported file), and your name, unit, weekly goal
-        and time zone.
+        <strong>What:</strong> when you switch on iCloud sync in Settings and give your consent,
+        Trackbook stores your notebook in your private iCloud database (CloudKit) with Apple, under
+        your Apple ID, so you have it on your iPhones and iPads signed in with the same Apple ID.
+        This covers workouts, sets and notes, routines, custom exercises, equipment, gyms (with
+        their location if you saved one), the body weight and body measurements you enter, and your
+        profile (such as name, unit and weekly goal). It counts against your iCloud storage. Data
+        from Apple Health is never synced to iCloud; it stays in separate storage on the device only
+        (section 3). Android and the web have no sync.
       </p>
       <p>
-        <strong>Why and legal basis:</strong> the account exists so you can use your notebook on
-        several phones (Art. 6(1)(b) GDPR, performance of the service you asked for). Training data
-        and body weight can say something about your health, so we only upload the notebook with
-        your explicit consent (Art. 9(2)(a) and Art. 6(1)(a) GDPR). The app asks for it before the
-        first upload. Our server records which version of the consent text you agreed to and when,
-        and also when you withdraw it, so we can prove it (Art. 7(1) GDPR). Without a current
-        consent the server accepts no uploads.
+        <strong>Who:</strong> iCloud is provided by Apple, for users in the EU by Apple Distribution
+        International Ltd., Cork, Ireland. Apple's iCloud terms and Apple's privacy policy at
+        apple.com/legal/privacy apply. We have no access to your iCloud data and run no server of
+        our own for it.
       </p>
       <p>
-        <strong>Withdrawing consent:</strong> in Settings › Account, choose "Stop sync and delete
-        cloud copy". This deletes the notebook stored in your account at once and signs this phone
-        out; the notebook on your phone, your account and your subscription stay. You can also
-        delete your account in Settings, or ask us by email (see
-        <a href="delete-account.html">Delete your account</a>). Withdrawal does not affect anything
-        done before it.
+        <strong>Encryption:</strong> the data is encrypted in transit, and Trackbook stores every
+        field as an encrypted CloudKit field. It is end-to-end encrypted only if you have turned on
+        Advanced Data Protection for iCloud in your iCloud settings. Otherwise Apple manages the
+        keys, as it does for most iCloud data.
       </p>
       <p>
-        <strong>Recipient:</strong> Supabase, Inc. (supabase.com) operates the database for us as
-        our processor (Art. 28 GDPR). The data is stored on servers in Frankfurt am Main, Germany,
-        encrypted in transit and at rest. Only you can see it in the app; as the operator we could
-        technically access it, and do so only if you ask us to or the law requires it. The notebook
-        is not end-to-end encrypted.
+        <strong>Legal basis:</strong> your consent (Art. 6(1)(a) GDPR). Training data, body weight
+        and body measurements can say something about your health; as far as they are health data,
+        Trackbook syncs them only with your explicit consent (Art. 9(2)(a) GDPR). The app asks for
+        it when you switch on iCloud sync. Your consent is recorded only on your phone.
       </p>
       <p>
-        <strong>Third countries:</strong> Supabase, Inc. is a US company. Supabase's data processing
-        agreement contains the EU Standard Contractual Clauses (Art. 46(2)(c) GDPR). US authorities
-        may be able to require US companies to hand over data.
+        <strong>Withdrawing consent and deleting:</strong> switch off iCloud sync in Trackbook's
+        Settings, and the app stops syncing. It then offers to delete the iCloud copy for all your
+        devices. You can also delete it in the iOS Settings app: [your name] › iCloud › Manage
+        Storage, then choose Trackbook and delete its data (the exact menu names vary between iOS
+        versions). See also <a href="delete-account.html">Delete your data</a>. Withdrawal does not
+        affect anything done before it.
       </p>
       <p>
-        <strong>Sign in with Apple:</strong> Apple Distribution International Ltd., Cork, Ireland,
-        processes your Apple ID sign-in under its own responsibility. See Apple's privacy policy at
-        apple.com/legal/privacy.
+        <strong>How long:</strong> the iCloud copy stays until you delete it. Switching sync off on
+        its own does not delete it.
       </p>
-      <p>
-        <strong>How long:</strong> until you delete your account. Deleting it removes the account
-        and the notebook stored in it at once. Copies in the database backups are overwritten within
-        30 days. When you delete an account made with Apple, we also revoke Trackbook's access to
-        your Apple ID.
-      </p>
-      <p>
-        <strong>Trackbook Sync subscription:</strong> when sync is a paid subscription, you buy it
-        through the App Store or Google Play, which handle payment under their own responsibility;
-        we never see your payment details. Your account ID travels with the purchase to Apple or
-        Google, so the purchase can only unlock your account. To check that the subscription is
-        running, the app sends the store's transaction ID or purchase token to our server, which
-        asks Apple or Google for its status and stores the product, that ID and the expiry date with
-        your account (Art. 6(1)(b) GDPR). These are deleted with your account; tax law may require
-        us to keep records of payments we receive from the stores for up to ten years.
-      </p>
-      <p><strong>Age:</strong> you need to be 16 or older to create an account (Art. 8 GDPR).</p>
 
       <h2>5. Crash reports (optional, off by default)</h2>
       <p>
@@ -192,8 +174,8 @@
       <p>
         When you open the gym map or search for gyms, the app loads map tiles and gym locations from
         OpenStreetMap-based services. They receive your IP address and the map area you are looking
-        at, which can reveal roughly where you are. Your exact GPS position, your notebook and your
-        account are not sent to these services. The map is only used when you open it; location
+        at, which can reveal roughly where you are. Your exact GPS position and your notebook are not
+        sent to these services. The map is only used when you open it; location
         permission is asked for only then, and you can use the map without it. While the map is open
         on Wi-Fi, the app also downloads the map around your starred gyms so it works offline; the
         tile service then sees those areas.
@@ -257,8 +239,8 @@
         deleted (Art. 17), to restrict processing (Art. 18), to data portability (Art. 20) and to
         object to processing based on legitimate interest (Art. 21). You can withdraw any consent at
         any time with effect for the future (Art. 7(3)). Most of this you can do yourself in the
-        app: edit or delete entries, export your notebook, switch off crash reports, delete your
-        account. Otherwise write to
+        app: edit or delete entries, export your notebook, switch off crash reports, switch off
+        iCloud sync and delete the iCloud copy. Otherwise write to
         <a href="mailto:marvin.klaproth@gmail.com">marvin.klaproth@gmail.com</a>.
       </p>
       <p>
@@ -268,9 +250,8 @@
 
       <h2>13. Security</h2>
       <p>
-        All connections are encrypted (HTTPS/TLS). In the cloud, each notebook can only be read with
-        the account it belongs to (row-level security). Your sign-in is kept in the phone's keychain
-        or keystore.
+        All connections are encrypted (HTTPS/TLS). Your private iCloud database can only be reached
+        with your Apple ID; Trackbook has no access to it. For encryption in iCloud, see section 4.
       </p>
 
       <h2>14. Changes</h2>
